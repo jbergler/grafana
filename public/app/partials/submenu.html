@@ -2,7 +2,7 @@
 	<div class="tight-form borderless">
 
 		<ul class="tight-form-list" ng-if="dashboard.templating.list.length > 0">
-			<li ng-repeat="variable in variables" class="submenu-item">
+			<li ng-repeat="variable in variables" ng-show="!variable.hideVariable" class="submenu-item">
 				<span class="template-variable tight-form-item" ng-show="!variable.hideLabel" style="padding-right: 5px">
 					{{variable.label || variable.name}}:
 				</span>
